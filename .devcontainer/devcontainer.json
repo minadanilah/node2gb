@@ -1,0 +1,22 @@
+{
+    "name": "Ubuntu 20.04 with Node.js",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "20"
+      }
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "postCreateCommand": "node -v && npm -v",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode"
+        ]
+      }
+    }
+  }
+  
